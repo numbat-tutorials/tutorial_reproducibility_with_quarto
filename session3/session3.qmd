@@ -1,0 +1,50 @@
+---
+title: "session3"
+format: html
+---
+
+# Engaging reproducible presentations 
+
+# Your first presentation(s)
+
+## What happened?
+
+# Images, Code and Positioning
+
+## What happened?
+
+# Theming
+
+## What happened?
+
+# Animations
+
+## What happened?
+
+# Additional tidbits
+
+<!-- Things to cover: -->
+<!---->
+<!-- Structure of slides -->
+<!-- Hosting  -->
+<!-- Using images -->
+<!-- Positioning images and text -->
+<!-- R code output, syntax highlighting and line highlighting -->
+<!-- Speaker view, chalkboard and other presentation tools (mutliplex to follow along, a11y with ding sound to keep track) -->
+<!-- Styling -->
+<!-- Fragments and animations (just a slight intro) -->
+<!-- Resources for more learning (slidecraft by emil, nicole's blog, mine's blog etc.) -->
+
+<!-- | Length (minutes) | Topic | Description | -->
+<!-- | --------------- | --------------- | --------------- | -->
+<!-- | 5  | Overview | Structure of the entire session and what we will be covering and not covering | -->
+<!-- | 5 | Presentation output types | LALALALA | -->
+<!-- | 5 | Your first online presentation | LALALALA | -->
+<!-- | 10 | Hosting and sharing presentations | LALALALA | -->
+<!-- | 10 | Images, captions and posiitoning | LALALALA | -->
+<!-- | 10 | Code outputs and highlighting | LALALALA | -->
+<!-- | 5 | In presentation tools | LALALALA | -->
+<!-- | 15 | Theming | LALALALA | -->
+<!-- | 5 | Intro to fragments | LALALALA | -->
+<!-- | 5 | Resources for future | LALALALA | -->
+<!---->
