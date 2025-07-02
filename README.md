@@ -1,6 +1,6 @@
 # Reproducible reporting, academic papers, presentations and theses with quarto
 
-Website:
+Website: [https://numbat-tutorials.github.io/tutorial_reproducibility_with_quarto/](https://numbat-tutorials.github.io/tutorial_reproducibility_with_quarto/)
 
 In an era where transparency, collaboration, and reproducibility are central to 
 trustworthy research and data-driven decision-making, the ability to produce 
