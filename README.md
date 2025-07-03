@@ -21,7 +21,7 @@ share, and more impactful.
 
 - [Janith Wanniarachchi](https://janithwanni.netlify.app/) is a second year PhD student. Previously he has worked at Appsilon as an R/Shiny Developer and as a software developer in the data science industry. His current research is on building interactive tools to understand how AI models work.
 
-This team is being mentored for this tutorial by [Professor Di Cook](https://www.dicook.org).
+The team is being mentored for this tutorial by [Professor Di Cook](https://www.dicook.org).
 
 **Background**: You should have a basic understanding of R to the level of working after reading 
 [R4DS](https://r4ds.hadley.nz) and possibly some knowledge of quarto or RMarkdown. You are a researcher wishing to improve your 
