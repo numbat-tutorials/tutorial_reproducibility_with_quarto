@@ -223,6 +223,7 @@ As shown in recent work [@smith2021], the method is effective.
 
 <!-- PDF and HTML versions, equations and figures cross-reference, code chunks (show and hide) -->
 
+# ⚙️ Quarto Quirks & Power Tips
 
 ## 🧩 Conditional Code Execution by Output Format
 
@@ -243,6 +244,56 @@ Use this option:
 ```r
 #| eval: knitr::is_latex_output()
 ```
+---
+
+### 📐 LaTeX Equation in a Figure Caption
+
+```markdown
+![This figure demonstrates the equation $E = mc^2$.](figure.png){#fig-einstein}
+```
+
+✅ You can embed LaTeX-style equations directly using dollar signs (`$...$`) in the caption.
+
+✅ Works in both **HTML** and **PDF** outputs.
+
+---
+
+### Refer to Another Figure in a Caption
+
+```markdown
+![Here we compare this with Figure @fig-einstein.](comparison.png){#fig-compare}
+```
+
+📝 `@fig-einstein` will resolve to the numbered figure reference (e.g., *Figure 1*) in PDF/HTML.
+
+📌 Make sure the first figure has an ID like `{#fig-einstein}`.
+
+---
+
+### 🔗 Hyperlink in a Table
+
+```markdown
+| Tool   | Link                              |
+|--------|-----------------------------------|
+| Quarto | [quarto.org](https://quarto.org) |
+```
+
+✅ Use standard Markdown syntax inside tables: `[text](url)`
+
+✅ Works for **external links**, local files, and section anchors.
+
+---
+
+### 🖼 Alt-Text in Figure Chunk
+
+```markdown
+![Scatterplot of speed vs. distance](cars-plot.png){fig-alt="A scatterplot showing car stopping distances by speed."}
+```
+
+✅ Use `fig-alt="..."` to improve **accessibility** and support screen readers.
+
+👍 Highly recommended for academic publishing and accessibility standards.
+
 
 ## 🎯 What We Learned
 
