@@ -197,7 +197,6 @@ This will:
 
 💡 Save as: `references.bib`
 
----
 
 ### 2. Link the `.bib` File in YAML
 
@@ -214,11 +213,11 @@ As shown in recent work [@smith2021], the method is effective.
 
 🔄 Quarto will automatically format the in-text citation and generate a reference list.
 
-### 🔍 Tips
+<!-- ### 🔍 Tips -->
 
-* Download CSL files from [zotero.org/styles](https://www.zotero.org/styles)
-* You can also use reference managers (Zotero, Mendeley) to export `.bib` files.
-* Supports multiple `.bib` files if needed.
+<!-- * Download CSL files from [zotero.org/styles](https://www.zotero.org/styles) -->
+<!-- * You can also use reference managers (Zotero, Mendeley) to export `.bib` files. -->
+<!-- * Supports multiple `.bib` files if needed. -->
 
 <!-- ## More exercises on adding code chunks, equations, figures, and tables -->
 
@@ -229,7 +228,7 @@ As shown in recent work [@smith2021], the method is effective.
 
 Sometimes you may want to run a code chunk **only when rendering to HTML** or **only for PDF** output.
 
-### ✅ Run only for HTML:
+### Run only for HTML:
 
 Use this option:
 
@@ -237,7 +236,7 @@ Use this option:
 #| eval: knitr::is_html_output()
 ```
 
-### ✅ Run only for PDF:
+### Run only for PDF:
 
 Use this option:
 

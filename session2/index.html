@@ -317,31 +317,26 @@ Jayani P. G. Lakshika
 <span id="cb5-8"><a href=""></a><span class="in">  year = {2021}</span></span>
 <span id="cb5-9"><a href=""></a><span class="in">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>💡 Save as: <code>references.bib</code></p>
-</section>
-<section class="slide level2">
-
 <h3 id="link-the-.bib-file-in-yaml">2. Link the <code>.bib</code> File in YAML</h3>
 <div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href=""></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
 <span id="cb6-2"><a href=""></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> apa.csl</span><span class="co">  # Optional: adds citation style (e.g., APA, IEEE)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <h3 id="cite-in-the-text">3. Cite in the Text</h3>
 <div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href=""></a>As shown in recent work <span class="co">[</span><span class="ot">@smith2021</span><span class="co">]</span>, the method is effective.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>🔄 Quarto will automatically format the in-text citation and generate a reference list.</p>
-<h3 id="tips">🔍 Tips</h3>
-<ul>
-<li>Download CSL files from <a href="https://www.zotero.org/styles">zotero.org/styles</a></li>
-<li>You can also use reference managers (Zotero, Mendeley) to export <code>.bib</code> files.</li>
-<li>Supports multiple <code>.bib</code> files if needed.</li>
-</ul>
+<!-- ### 🔍 Tips -->
+<!-- * Download CSL files from [zotero.org/styles](https://www.zotero.org/styles) -->
+<!-- * You can also use reference managers (Zotero, Mendeley) to export `.bib` files. -->
+<!-- * Supports multiple `.bib` files if needed. -->
 <!-- ## More exercises on adding code chunks, equations, figures, and tables -->
 <!-- PDF and HTML versions, equations and figures cross-reference, code chunks (show and hide) -->
 </section>
 <section id="conditional-code-execution-by-output-format" class="slide level2">
 <h2>🧩 Conditional Code Execution by Output Format</h2>
 <p>Sometimes you may want to run a code chunk <strong>only when rendering to HTML</strong> or <strong>only for PDF</strong> output.</p>
-<h3 id="run-only-for-html">✅ Run only for HTML:</h3>
+<h3 id="run-only-for-html">Run only for HTML:</h3>
 <p>Use this option:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a><span class="co">#| eval: knitr::is_html_output()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<h3 id="run-only-for-pdf">✅ Run only for PDF:</h3>
+<h3 id="run-only-for-pdf">Run only for PDF:</h3>
 <p>Use this option:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a><span class="co">#| eval: knitr::is_latex_output()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
