@@ -229,29 +229,21 @@ As shown in recent work [@smith2021], the method is effective.
 
 Sometimes you may want to run a code chunk **only when rendering to HTML** or **only for PDF** output.
 
-### ✅ Run Only for HTML Output
+### ✅ Run only for HTML:
 
-Use the `eval` option with `knitr::is_html_output()`:
+Use this option:
 
-````markdown
-```{r}
+```r
 #| eval: knitr::is_html_output()
-plot(cars)
 ```
-````
----
 
-### ✅ Run Only for PDF Output
+### ✅ Run only for PDF:
 
-Use `knitr::is_latex_output()`:
+Use this option:
 
-````markdown
-```{r}
+```r
 #| eval: knitr::is_latex_output()
-summary(cars)
 ```
-````
----
 
 ## 🎯 What We Learned
 
