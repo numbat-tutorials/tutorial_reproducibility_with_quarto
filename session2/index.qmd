@@ -179,7 +179,7 @@ This will:
   * Front matter and bibliography
   * A ready-to-render thesis structure
 
-📘 You'll be ready to start writing your thesis with Monash-compliant formatting right out of the box!
+<!-- 📘 You'll be ready to start writing your thesis with Monash-compliant formatting right out of the box! -->
 
 ## 📚 Adding a Bibliography to `.qmd` Files
 
