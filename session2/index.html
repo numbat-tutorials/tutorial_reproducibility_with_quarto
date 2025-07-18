@@ -222,67 +222,109 @@ Jayani P. G. Lakshika
 </ul>
 </section>
 <section id="quarto-template-for-journal-paper" class="slide level2">
-<h2>Quarto Template for Journal Paper</h2>
-<p>With Quarto, you can make journal papers.</p>
-<p>You can use this as a template to create an article. or</p>
-<p>You may also use this format with an existing Quarto project or document.</p>
-<p>Here, we are going to use the template for <strong>Journal of Statistical Software</strong></p>
+<h2>📝 Quarto Template for Journal Paper</h2>
+<p>With <strong>Quarto</strong>, you can create fully formatted and reproducible journal articles with ease.</p>
+<p>You have two options:</p>
+<ul>
+<li>✨ <strong>Start fresh</strong> using a journal-specific template.</li>
+<li>🔧 <strong>Apply the format</strong> to an existing Quarto project.</li>
+</ul>
+<p>In this workshop, we will use the official template for the <strong><em>Journal of Statistical Software (JSS)</em></strong>.</p>
+<p>This template includes:</p>
+<ul>
+<li>A pre-configured YAML header</li>
+<li>Sample <code>.qmd</code> content</li>
+<li>A bibliography file (<code>references.bib</code>)</li>
+<li>A citation style file (<code>jss.csl</code>)</li>
+</ul>
+<p>You’ll be able to write, cite, and format your article — ready for submission — all in Quarto!</p>
 </section>
-<section id="lets-begin.." class="slide level2">
-<h2>Let’s begin..</h2>
-<h3 id="creating-a-new-article">Creating a New Article</h3>
-<p><code>quarto use template quarto-journals/jss</code></p>
-<p>This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.</p>
-<h3 id="installation-for-existing-document">Installation For Existing Document</h3>
-<p>You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:</p>
-<p><code>quarto add quarto-journals/jss</code></p>
+<section id="lets-begin" class="slide level2">
+<h2>🚀 Let’s Begin…</h2>
+<h3 id="creating-a-new-article">🆕 Creating a New Article</h3>
+<p>To start a new article using the <strong>Journal of Statistical Software (JSS)</strong> template, run this command in your terminal or RStudio console:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href=""></a><span class="ex">quarto</span> use template quarto-journals/jss</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will:</p>
+<ul>
+<li><p>Install the JSS extension</p></li>
+<li><p>Create a new folder with:</p>
+<ul>
+<li>A sample <code>.qmd</code> file</li>
+<li>A sample bibliography (<code>references.bib</code>)</li>
+<li>A citation style file (<code>jss.csl</code>)</li>
+</ul></li>
+</ul>
+<p>You’ll be ready to write your article right away!</p>
 </section>
 <section class="slide level2">
 
-<h4 id="how-to-render">How to render…</h4>
-<p>To use the format, you can use the format names <code>jss-pdf</code> and <code>jss-html</code>. For example:</p>
-<p><code>quarto render article.qmd --to jss-pdf</code></p>
-<p>or in your document yaml</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href=""></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href=""></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span><span class="at"> default</span></span>
-<span id="cb1-3"><a href=""></a><span class="at">  </span><span class="fu">jss-pdf</span><span class="kw">:</span></span>
-<span id="cb1-4"><a href=""></a><span class="at">    </span><span class="fu">keep-tex</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="at">    </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<h3 id="resource-to-find-journal-templates">Resource to find journal templates</h3>
-<p>https://github.com/quarto-journals</p>
+<h3 id="applying-the-format-to-an-existing-project">🛠️ Applying the Format to an Existing Project</h3>
+<p>Already have a Quarto document or project? Install the JSS format with:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href=""></a><span class="ex">quarto</span> add quarto-journals/jss</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then, update your YAML header to use the new format.</p>
+<p>✅ Now you’re ready to write and render in the JSS style!</p>
+<!-- ### Resource to find journal templates -->
+<!-- https://github.com/quarto-journals -->
 </section>
-<section id="exercise.." class="slide level2">
-<h2>Exercise..</h2>
+<section id="lets-try-it-together" class="slide level2">
+<h2>🧪 Let’s Try It Together!</h2>
+<p>Now it’s your turn to try creating a Quarto journal article using the <strong>JSS template</strong>.</p>
+<h3 id="steps-to-follow">🧭 Steps to Follow</h3>
+<ol type="1">
+<li><strong>Open RStudio or your terminal</strong></li>
+<li>Run this command to create a new project:</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href=""></a><span class="ex">quarto</span> use template quarto-journals/jss</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li><p>Open the new folder and locate:</p>
+<ul>
+<li><code>index.qmd</code> (main article)</li>
+<li><code>references.bib</code> (sample bibliography)</li>
+<li><code>jss.csl</code> (citation style)</li>
+</ul></li>
+<li><p>Click <strong>Render</strong> to preview the document as PDF or HTML</p></li>
+</ol>
+<p>🙋 Raise your hand or drop a question if you need help!</p>
 </section>
 <section id="monash-quarto-thesis-template" class="slide level2">
-<h2>Monash Quarto thesis template</h2>
-<p>This is a Quarto template that assists you in creating a Monash University thesis.</p>
-<p>You can create a thesis based on this template with the following command:</p>
-<p>https://github.com/quarto-monash/thesis</p>
-<p>This will install the extension and create the files that you can use as a starting place for your thesis.</p>
-</section>
-<section id="exercise..-1" class="slide level2">
-<h2>Exercise..</h2>
+<h2>🎓 Monash Quarto Thesis Template</h2>
+<p>The <strong>Monash Quarto Thesis Template</strong> helps you create a well-structured, submission-ready thesis following Monash University guidelines.</p>
+<h3 id="create-a-new-thesis-project">🆕 Create a New Thesis Project</h3>
+<p>To get started, run the following command in your terminal or RStudio console:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href=""></a><span class="ex">quarto</span> use template quarto-monash/thesis</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will:</p>
+<ul>
+<li><p>Install the Monash thesis extension</p></li>
+<li><p>Create a new project folder with:</p>
+<ul>
+<li>A pre-configured <code>index.qmd</code></li>
+<li>Chapter files (<code>chapters/</code>)</li>
+<li>Front matter and bibliography</li>
+<li>A ready-to-render thesis structure</li>
+</ul></li>
+</ul>
+<p>📘 You’ll be ready to start writing your thesis with Monash-compliant formatting right out of the box!</p>
 </section>
 <section id="adding-a-bibliography-to-.qmd-files" class="slide level2">
 <h2>📚 Adding a Bibliography to <code>.qmd</code> Files</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href=""></a><span class="fu">### 1. Create a `.bib` File (BibTeX Format)</span></span>
-<span id="cb2-2"><a href=""></a></span>
-<span id="cb2-3"><a href=""></a><span class="in">```bibtex</span></span>
-<span id="cb2-4"><a href=""></a><span class="in">@article{smith2021,</span></span>
-<span id="cb2-5"><a href=""></a><span class="in">  title = {A Method for Data Analysis},</span></span>
-<span id="cb2-6"><a href=""></a><span class="in">  author = {Smith, Jane},</span></span>
-<span id="cb2-7"><a href=""></a><span class="in">  journal = {Journal of Statistics},</span></span>
-<span id="cb2-8"><a href=""></a><span class="in">  year = {2021}</span></span>
-<span id="cb2-9"><a href=""></a><span class="in">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href=""></a><span class="fu">### 1. Create a `.bib` File (BibTeX Format)</span></span>
+<span id="cb5-2"><a href=""></a></span>
+<span id="cb5-3"><a href=""></a><span class="in">```bibtex</span></span>
+<span id="cb5-4"><a href=""></a><span class="in">@article{smith2021,</span></span>
+<span id="cb5-5"><a href=""></a><span class="in">  title = {A Method for Data Analysis},</span></span>
+<span id="cb5-6"><a href=""></a><span class="in">  author = {Smith, Jane},</span></span>
+<span id="cb5-7"><a href=""></a><span class="in">  journal = {Journal of Statistics},</span></span>
+<span id="cb5-8"><a href=""></a><span class="in">  year = {2021}</span></span>
+<span id="cb5-9"><a href=""></a><span class="in">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>💡 Save as: <code>references.bib</code></p>
 </section>
 <section class="slide level2">
 
 <h3 id="link-the-.bib-file-in-yaml">2. Link the <code>.bib</code> File in YAML</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href=""></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
-<span id="cb3-2"><a href=""></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> apa.csl</span><span class="co">  # Optional: adds citation style (e.g., APA, IEEE)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href=""></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb6-2"><a href=""></a><span class="fu">csl</span><span class="kw">:</span><span class="at"> apa.csl</span><span class="co">  # Optional: adds citation style (e.g., APA, IEEE)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <h3 id="cite-in-the-text">3. Cite in the Text</h3>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href=""></a>As shown in recent work <span class="co">[</span><span class="ot">@smith2021</span><span class="co">]</span>, the method is effective.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href=""></a>As shown in recent work <span class="co">[</span><span class="ot">@smith2021</span><span class="co">]</span>, the method is effective.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>🔄 Quarto will automatically format the in-text citation and generate a reference list.</p>
 <h3 id="tips">🔍 Tips</h3>
 <ul>
@@ -290,27 +332,55 @@ Jayani P. G. Lakshika
 <li>You can also use reference managers (Zotero, Mendeley) to export <code>.bib</code> files.</li>
 <li>Supports multiple <code>.bib</code> files if needed.</li>
 </ul>
+<!-- ## More exercises on adding code chunks, equations, figures, and tables -->
+<!-- PDF and HTML versions, equations and figures cross-reference, code chunks (show and hide) -->
 </section>
-<section id="exercise..-2" class="slide level2">
-<h2>Exercise..</h2>
-</section>
-<section id="more-exercises-on-adding-code-chunks-equations-figures-and-tables" class="slide level2">
-<h2>More exercises on adding code chunks, equations, figures, and tables</h2>
-<p>PDF and HTML versions, equations and figures cross-reference, code chunks (show and hide)</p>
-<h3 id="tables">Tables</h3>
-<p>The main arguments of the <code>gen_multicluster()</code> function are shown in Table @ref(tab:main-tb-html).</p>
-</section>
-<section id="all-in-one" class="slide level2">
-<h2>All in one…</h2>
-</section>
-<section class="slide level2">
-
-<h3 id="what-we-learned">What we learned?</h3>
-<p>Wrap-up everything</p>
+<section id="conditional-code-execution-by-output-format" class="slide level2">
+<h2>🧩 Conditional Code Execution by Output Format</h2>
+<p>Sometimes you may want to run a code chunk <strong>only when rendering to HTML</strong> or <strong>only for PDF</strong> output.</p>
+<h3 id="run-only-for-html-output">✅ Run Only for HTML Output</h3>
+<p>Use the <code>eval</code> option with <code>knitr::is_html_output()</code>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href=""></a></span>
+<span id="cb8-2"><a href=""></a>::: {.cell layout-align="center"}</span>
+<span id="cb8-3"><a href=""></a>::: {.cell-output-display}</span>
+<span id="cb8-4"><a href=""></a><span class="al">![](index_files/figure-revealjs/unnamed-chunk-1-1.png)</span>{fig-align='center' width=100%}</span>
+<span id="cb8-5"><a href=""></a>:::</span>
+<span id="cb8-6"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section class="slide level2">
 
-<p>Keep writing and keep it reproducible 💡</p>
+<h3 id="run-only-for-pdf-output">✅ Run Only for PDF Output</h3>
+<p>Use <code>knitr::is_latex_output()</code>:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href=""></a></span>
+<span id="cb9-2"><a href=""></a>::: {.cell layout-align="center"}</span>
+<span id="cb9-3"><a href=""></a>::: {.cell-output .cell-output-stdout}</span>
+<span id="cb9-4"><a href=""></a></span>
+<span id="cb9-5"><a href=""></a><span class="in">```</span></span>
+<span id="cb9-6"><a href=""></a><span class="in">     speed           dist       </span></span>
+<span id="cb9-7"><a href=""></a><span class="in"> Min.   : 4.0   Min.   :  2.00  </span></span>
+<span id="cb9-8"><a href=""></a><span class="in"> 1st Qu.:12.0   1st Qu.: 26.00  </span></span>
+<span id="cb9-9"><a href=""></a><span class="in"> Median :15.0   Median : 36.00  </span></span>
+<span id="cb9-10"><a href=""></a><span class="in"> Mean   :15.4   Mean   : 42.98  </span></span>
+<span id="cb9-11"><a href=""></a><span class="in"> 3rd Qu.:19.0   3rd Qu.: 56.00  </span></span>
+<span id="cb9-12"><a href=""></a><span class="in"> Max.   :25.0   Max.   :120.00  </span></span>
+<span id="cb9-13"><a href=""></a><span class="in">```</span></span>
+<span id="cb9-14"><a href=""></a></span>
+<span id="cb9-15"><a href=""></a></span>
+<span id="cb9-16"><a href=""></a>:::</span>
+<span id="cb9-17"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="what-we-learned" class="slide level2">
+<h2>🎯 What We Learned</h2>
+<ul>
+<li>📝 <strong>Journal Articles</strong> – You can create a JSS-formatted article using <code>quarto use template quarto-journals/jss</code>.</li>
+<li>🎓 <strong>Monash Thesis</strong> – The Monash thesis template gives you a structured, submission-ready format out of the box.</li>
+<li>📚 <strong>Citations</strong> – Bibliographies are managed with <code>.bib</code> files and citations inserted using <code>[@key]</code> syntax.</li>
+<li>📊 <strong>Code &amp; Output</strong> – Quarto lets you embed R code, equations, figures, and tables with full formatting control.</li>
+<li>🧩 <strong>Conditional Rendering</strong> – You can control which code chunks run for HTML vs.&nbsp;PDF using <code>knitr::is_html_output()</code> or <code>knitr::is_latex_output()</code>.</li>
+</ul>
+</section>
+<section id="keep-writing-and-keep-it-reproducible" class="title-slide slide level1 center">
+<h1>Keep writing and keep it reproducible 💡</h1>
 
 </section>
     </div>

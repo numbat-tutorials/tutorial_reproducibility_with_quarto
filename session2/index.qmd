@@ -71,65 +71,115 @@ options(
 - Manage references and citations.
 - Add and customize code chunks, equations, figures, and tables in Quarto.
 
-## Quarto Template for Journal Paper
+## 📝 Quarto Template for Journal Paper
 
-With Quarto, you can make journal papers.
+With **Quarto**, you can create fully formatted and reproducible journal articles with ease.
 
-You can use this as a template to create an article. or
+You have two options:
 
-You may also use this format with an existing Quarto project or document.
+* ✨ **Start fresh** using a journal-specific template.
+* 🔧 **Apply the format** to an existing Quarto project.
 
-Here, we are going to use the template for **Journal of Statistical Software**
 
-## Let's begin..
+In this workshop, we will use the official template for the ***Journal of Statistical Software (JSS)***.
 
-### Creating a New Article
+This template includes:
 
-```quarto use template quarto-journals/jss```
+* A pre-configured YAML header
+* Sample `.qmd` content
+* A bibliography file (`references.bib`)
+* A citation style file (`jss.csl`)
 
-This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.
+You’ll be able to write, cite, and format your article — ready for submission — all in Quarto!
 
-### Installation For Existing Document
+## 🚀 Let's Begin...
 
-You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:
+### 🆕 Creating a New Article
 
-```quarto add quarto-journals/jss```
+To start a new article using the **Journal of Statistical Software (JSS)** template, run this command in your terminal or RStudio console:
+
+```bash
+quarto use template quarto-journals/jss
+```
+
+This will:
+
+* Install the JSS extension
+* Create a new folder with:
+
+  * A sample `.qmd` file
+  * A sample bibliography (`references.bib`)
+  * A citation style file (`jss.csl`)
+
+You'll be ready to write your article right away!
 
 ---
 
-#### How to render...
+### 🛠️ Applying the Format to an Existing Project
 
-To use the format, you can use the format names `jss-pdf` and `jss-html`. For example:
+Already have a Quarto document or project?
+Install the JSS format with:
 
-```quarto render article.qmd --to jss-pdf```
-
-or in your document yaml
-
-```yaml
-format:
-  pdf: default
-  jss-pdf:
-    keep-tex: true    
+```bash
+quarto add quarto-journals/jss
 ```
 
-### Resource to find journal templates
+Then, update your YAML header to use the new format.
 
-https://github.com/quarto-journals
+✅ Now you’re ready to write and render in the JSS style!
 
-## Exercise..
 
-## Monash Quarto thesis template
+<!-- ### Resource to find journal templates -->
 
-This is a Quarto template that assists you in creating a Monash University thesis.
+<!-- https://github.com/quarto-journals -->
 
-You can create a thesis based on this template with the following command:
 
-https://github.com/quarto-monash/thesis
+## 🧪 Let's Try It Together!
 
-This will install the extension and create the files that you can use as a starting place for your thesis.
+Now it's your turn to try creating a Quarto journal article using the **JSS template**.
 
-## Exercise..
+### 🧭 Steps to Follow
 
+1. **Open RStudio or your terminal**
+2. Run this command to create a new project:
+
+```bash
+quarto use template quarto-journals/jss
+```
+
+3. Open the new folder and locate:
+
+   * `index.qmd` (main article)
+   * `references.bib` (sample bibliography)
+   * `jss.csl` (citation style)
+
+4. Click **Render** to preview the document as PDF or HTML
+
+🙋 Raise your hand or drop a question if you need help!
+
+## 🎓 Monash Quarto Thesis Template
+
+The **Monash Quarto Thesis Template** helps you create a well-structured, submission-ready thesis following Monash University guidelines.
+
+### 🆕 Create a New Thesis Project
+
+To get started, run the following command in your terminal or RStudio console:
+
+```bash
+quarto use template quarto-monash/thesis
+```
+
+This will:
+
+* Install the Monash thesis extension
+* Create a new project folder with:
+
+  * A pre-configured `index.qmd`
+  * Chapter files (`chapters/`)
+  * Front matter and bibliography
+  * A ready-to-render thesis structure
+
+📘 You'll be ready to start writing your thesis with Monash-compliant formatting right out of the box!
 
 ## 📚 Adding a Bibliography to `.qmd` Files
 
@@ -170,35 +220,48 @@ As shown in recent work [@smith2021], the method is effective.
 * You can also use reference managers (Zotero, Mendeley) to export `.bib` files.
 * Supports multiple `.bib` files if needed.
 
-## Exercise..
+<!-- ## More exercises on adding code chunks, equations, figures, and tables -->
+
+<!-- PDF and HTML versions, equations and figures cross-reference, code chunks (show and hide) -->
 
 
-## More exercises on adding code chunks, equations, figures, and tables
+## 🧩 Conditional Code Execution by Output Format
 
-PDF and HTML versions, equations and figures cross-reference, code chunks (show and hide)
+Sometimes you may want to run a code chunk **only when rendering to HTML** or **only for PDF** output.
 
----
-### Figures
+### ✅ Run Only for HTML Output
 
----
+Use the `eval` option with `knitr::is_html_output()`:
 
-### Tables
-
-The main arguments of the `gen_multicluster()` function are shown in Table `r knitr::asis_output(ifelse(knitr::is_html_output(), '\\@ref(tab:main-tb-html)', '\\@ref(tab:main-tb-pdf)'))`.
-
----
-
-## All in one...
-
----
-
-### What we learned?
-
-Wrap-up everything
-
+````markdown
+```{r}
+#| eval: knitr::is_html_output()
+plot(cars)
+```
+````
 ---
 
-Keep writing and keep it reproducible 💡
+### ✅ Run Only for PDF Output
+
+Use `knitr::is_latex_output()`:
+
+````markdown
+```{r}
+#| eval: knitr::is_latex_output()
+summary(cars)
+```
+````
+---
+
+## 🎯 What We Learned
+
+* 📝 **Journal Articles** – You can create a JSS-formatted article using `quarto use template quarto-journals/jss`.
+* 🎓 **Monash Thesis** – The Monash thesis template gives you a structured, submission-ready format out of the box.
+* 📚 **Citations** – Bibliographies are managed with `.bib` files and citations inserted using `[@key]` syntax.
+* 📊 **Code & Output** – Quarto lets you embed R code, equations, figures, and tables with full formatting control.
+* 🧩 **Conditional Rendering** – You can control which code chunks run for HTML vs. PDF using `knitr::is_html_output()` or `knitr::is_latex_output()`.
+
+# Keep writing and keep it reproducible 💡
 
 
 
