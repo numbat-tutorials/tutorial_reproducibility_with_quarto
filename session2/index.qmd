@@ -1,7 +1,7 @@
 ---
 title: "Writing academically"
 author: 
-  - name: "Jayani P.G. Lakshika"
+  - name: "Jayani P. G. Lakshika"
 institute: "Department of Econometrics and Business Statistics, Monash University, Australia."
 format: 
   revealjs:
@@ -17,12 +17,15 @@ title-slide-attributes:
   data-background-position: "justify"
 template-partials:
   - style/title-slide.html 
-footer: "[Reproducibility with Quarto]"
+footer: "[https://github.com/numbat-tutorials/tutorial_reproducibility_with_quarto](https://github.com/numbat-tutorials/tutorial_reproducibility_with_quarto.git)"
 ---
 
 ```{r}
 #| label: setup
 #| include: false
+
+library(tidyverse)
+library(kableExtra)
 
 # set width of code output
 options(width = 65)
@@ -62,10 +65,140 @@ options(
 )
 ```
 
-## Quarto template for Journal paper
+## 🎯 Objectives
+
+- Understand how to use the Quarto journal and thesis templates.
+- Manage references and citations.
+- Add and customize code chunks, equations, figures, and tables in Quarto.
+
+## Quarto Template for Journal Paper
+
+With Quarto, you can make journal papers.
+
+You can use this as a template to create an article. or
+
+You may also use this format with an existing Quarto project or document.
+
+Here, we are going to use the template for **Journal of Statistical Software**
+
+## Let's begin..
+
+### Creating a New Article
+
+```quarto use template quarto-journals/jss```
+
+This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.
+
+### Installation For Existing Document
+
+You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:
+
+```quarto add quarto-journals/jss```
+
+---
+
+#### How to render...
+
+To use the format, you can use the format names `jss-pdf` and `jss-html`. For example:
+
+```quarto render article.qmd --to jss-pdf```
+
+or in your document yaml
+
+```yaml
+format:
+  pdf: default
+  jss-pdf:
+    keep-tex: true    
+```
+
+### Resource to find journal templates
+
+https://github.com/quarto-journals
+
+## Exercise..
 
 ## Monash Quarto thesis template
 
-## Bibliography
+This is a Quarto template that assists you in creating a Monash University thesis.
+
+You can create a thesis based on this template with the following command:
+
+https://github.com/quarto-monash/thesis
+
+This will install the extension and create the files that you can use as a starting place for your thesis.
+
+## Exercise..
+
+
+## 📚 Adding a Bibliography to `.qmd` Files
+
+````markdown
+### 1. Create a `.bib` File (BibTeX Format)
+
+```bibtex
+@article{smith2021,
+  title = {A Method for Data Analysis},
+  author = {Smith, Jane},
+  journal = {Journal of Statistics},
+  year = {2021}
+}
+````
+
+💡 Save as: `references.bib`
+
+---
+
+### 2. Link the `.bib` File in YAML
+
+```yaml
+bibliography: references.bib
+csl: apa.csl  # Optional: adds citation style (e.g., APA, IEEE)
+```
+
+### 3. Cite in the Text
+
+```markdown
+As shown in recent work [@smith2021], the method is effective.
+```
+
+🔄 Quarto will automatically format the in-text citation and generate a reference list.
+
+### 🔍 Tips
+
+* Download CSL files from [zotero.org/styles](https://www.zotero.org/styles)
+* You can also use reference managers (Zotero, Mendeley) to export `.bib` files.
+* Supports multiple `.bib` files if needed.
+
+## Exercise..
+
 
 ## More exercises on adding code chunks, equations, figures, and tables
+
+PDF and HTML versions, equations and figures cross-reference, code chunks (show and hide)
+
+---
+### Figures
+
+---
+
+### Tables
+
+The main arguments of the `gen_multicluster()` function are shown in Table `r knitr::asis_output(ifelse(knitr::is_html_output(), '\\@ref(tab:main-tb-html)', '\\@ref(tab:main-tb-pdf)'))`.
+
+---
+
+## All in one...
+
+---
+
+### What we learned?
+
+Wrap-up everything
+
+---
+
+Keep writing and keep it reproducible 💡
+
+
+
