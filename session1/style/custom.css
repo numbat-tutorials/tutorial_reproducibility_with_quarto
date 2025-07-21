@@ -112,3 +112,11 @@
 #short-r .sourceCode .numberSource .r {
   height: 150px
 }
+
+.profile {
+  width: 7.5em;
+  height: 7.5em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}

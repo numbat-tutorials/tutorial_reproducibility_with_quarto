@@ -64,6 +64,66 @@ options(
 
 # Introduction
 
+## Presenters:
+
+:::: {.columns}
+
+::: {.column width = "33.33%"}
+
+::: {.smaller}
+
+**Session 1**: Reproducible data analysis reports
+
+:::
+
+![](images/krisanat.png){.profile}
+
+::: {.smaller}
+
+Krisanat Anukarnsakulchularp
+
+:::
+
+:::
+
+::: {.column width = "33.33%"}
+
+::: {.smaller}
+
+**Session 2**: Writing academically
+
+:::
+
+![](images/jayani.png){.profile}
+
+::: {.smaller}
+
+P. G. Jayani Lakshika
+
+:::
+
+:::
+
+::: {.column width = "33.33%"}
+
+::: {.smaller}
+
+**Session 3**: Engaging reproducible presentations 
+
+:::
+
+![](images/janith.jpg){.profile}
+
+::: {.smaller}
+
+Janith Wanniarachchi
+
+:::
+
+:::
+
+::::
+
 ## What is reproducible research?
 
 **According to the USA National Academies of Science, Engineering and Medicie:**
@@ -75,11 +135,11 @@ options(
 
 ## Why?
 
-- Efficiency: allow changes to be implemented more easily, especially for dynamic reproducible documents.
+- **Efficiency**: allow changes to be implemented more easily, especially for dynamic reproducible documents.
 
-- Repeatability: the analysis can be repeated multiple times while still obtaining the same results.
+- **Repeatability**: the analysis can be repeated multiple times while still obtaining the same results.
 
-- Transparency: everything is available for access, resulting in more trustworthy results.
+- **Transparency**: everything is available for access, resulting in more trustworthy results.
 
 
 ## How might the project look?
@@ -95,7 +155,11 @@ options(
 Literate programming is an approach to writing reports using software that weaves together the source code and text at the time of creation.
 :::
 
+:::{.smaller}
+
 However, a complex project will require more than literate programming.
+
+:::
 
 
 ## Dynamics documents
@@ -109,11 +173,11 @@ More on this later!
 
 ## Main tools for reproducible research
 
-- R: the programming language.
+- **R**: the programming language.
 
-- RStudio: an integrated developer environment (IDE).
+- **RStudio**: an integrated developer environment (IDE).
 
-- Quarto: tools for writing a complete analysis, and combines text and code together.
+- **Quarto**: tools for writing a complete analysis, and combines text and code together.
 
 
 # Getting started
