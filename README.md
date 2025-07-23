@@ -68,7 +68,7 @@ This session will be giving a high level introduction to building presentations,
 | **Animations** | Introducing animations and how they can be used without too much of a hassle. |
 
 
-## Getting started (these details to come)
+## Getting started
 
 1. Install R and RStudio. Follow these [instructions](https://startr.numbat.space/modules/starter/installation/).
 
