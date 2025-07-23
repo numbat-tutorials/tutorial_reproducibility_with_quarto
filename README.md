@@ -74,7 +74,19 @@ This session will be giving a high level introduction to building presentations,
 
 2. Make sure you are familiar with R and RStudio. If you have not worked with these before, do the second and third modules from this [website](https://startr.numbat.space/)
 
-3. Install Quarto from this [website](https://quarto.org/docs/get-started/) 
+3. Install Quarto from this [website](https://quarto.org/docs/get-started/).
+
+4. Install TinyTex with `tinytex::install_tinytex()` for generating PDF documents.
+
+```
+install.packages(c("tidyverse", 
+                   "colorspace", 
+                   "patchwork",
+                   "conflicted",
+                   "kableExtra",
+                   "knitr"), 
+                   dependencies=c("Depends", "Imports"))
+```
 
 <!--
 1. Install Quarto from the website.
