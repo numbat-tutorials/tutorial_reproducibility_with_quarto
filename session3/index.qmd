@@ -101,12 +101,14 @@ code-output.qmd
 
 :::: 
 
-## Take a breather
+## Take a breather {.breather}
 
 ::: {.callout-tip}
 Try making a presentation 
+
 - including a photo you take with your camera right now (or use an existing image in your computer)
 - Add code to plot the audience engagement of this presentation up to now (use random values with sequential time steps, OR use actual values for how engaged you were)
+
 :::
 
 
@@ -143,13 +145,15 @@ You can customize the individual parts of the presentation with a custom theme.
 
 ::::
 
-## Take a breather
+## Take a breather {.breather}
 
 ::: {.callout-tip}
 Try styling your previous presentation by 
+
 - Change the base font color and family
 - Change the heading color and family
 - Change the link color and test it by adding a link to your favorite YouTube video (bonus points if its a rick roll)
+
 :::
 
 
@@ -183,7 +187,7 @@ Examples include,
 
 # Wrapping up
 
-## What did we learn today?
+## What did we learn today? {.breather}
 
 ### Group discussion time! 
 

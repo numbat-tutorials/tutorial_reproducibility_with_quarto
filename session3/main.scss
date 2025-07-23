@@ -75,3 +75,13 @@ $link-color: darken(theme-color("red"), 20%);
 .reveal div.sourceCode {
   border: 1px solid theme-color("darkgreen");
 }
+
+.breather {
+  h2,
+  h3,
+  p,
+  li,
+  * {
+    color: #065084;
+  }
+}
