@@ -6,8 +6,8 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.30">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.31">
 
   <meta name="author" content="Krisanat Anukarnsakulchularp">
   <title>Reproducible data analysis reports</title>
@@ -264,13 +264,13 @@ Krisanat Anukarnsakulchularp
 <section id="why" class="slide level2">
 <h2>Why?</h2>
 <ul>
-<li><p><strong>Efficiency</strong>: allow changes to be implemented more easily, especially for dynamic reproducible documents.</p></li>
-<li><p><strong>Repeatability</strong>: the analysis can be repeated multiple times while still obtaining the same results.</p></li>
-<li><p><strong>Transparency</strong>: everything is available for access, resulting in more trustworthy results.</p></li>
-<li><p><strong>Easy to update</strong>: when new data arrives, the report can be automatically updated.</p></li>
+<li class="fragment"><p><strong>Efficiency</strong>: allow changes to be implemented more easily, especially for dynamic reproducible documents.</p></li>
+<li class="fragment"><p><strong>Repeatability</strong>: the analysis can be repeated multiple times while still obtaining the same results.</p></li>
+<li class="fragment"><p><strong>Transparency</strong>: everything is available for access, resulting in more trustworthy results.</p></li>
+<li class="fragment"><p><strong>Easy to update</strong>: when new data arrives, the report can be automatically updated.</p></li>
 </ul>
 <div class="fragment">
-<p><em>And future you will thank you, because they will know what past you was thinking</em>. It helps memory, collaboration and sharing.</p>
+<p><em>And future you will thank you, because they will know what past you was thinking</em>. It helps memory, collaboration, and sharing.</p>
 </div>
 </section>
 <section id="how-might-the-project-look" class="slide level2">
@@ -302,7 +302,7 @@ Krisanat Anukarnsakulchularp
 <li>a versioning and sharing system, like GitHub and git.</li>
 <li>software environment supporting workflows such as <a href="https://docs.ropensci.org/targets/">targets</a> or <a href="https://rstudio.github.io/renv/articles/renv.html">renv</a>.</li>
 </ul>
-<p><em>But these are for a future workshops.</em></p>
+<p><em>But these are for future workshops.</em></p>
 </div>
 </section>
 <section id="dynamics-documents" class="slide level2">
@@ -311,7 +311,9 @@ Krisanat Anukarnsakulchularp
 <li><p>A dynamic document includes <strong>code</strong> used for data analysis and <strong>text</strong> explaining the analysis and results.</p></li>
 <li><p>These two things produce a <strong>report</strong>, a <strong>paper</strong>, or <strong>presentation</strong> sequentially and dynamically, and possibly different output formats, html, pdf, docx, ppt, by changing one line in the file.</p></li>
 </ul>
+<div class="fragment">
 <p>More on papers and presentations in the next sessions! <em>Here we focus on reports!</em></p>
+</div>
 </section>
 <section id="main-tools-for-reproducible-research" class="slide level2">
 <h2>Main tools for reproducible research</h2>
@@ -321,7 +323,7 @@ Krisanat Anukarnsakulchularp
 <li><p><strong>Quarto</strong>: tools for writing a complete analysis, and combines text and code together.</p></li>
 </ul>
 <div class="smaller">
-<p>Similar tools are available in other language, and quarto can contain code chunks of various languages, possibly in the same document.</p>
+<p>Similar tools are available in other languages, and Quarto can contain code chunks of various languages, possibly in the same document.</p>
 </div>
 </section></section>
 <section>
@@ -329,14 +331,26 @@ Krisanat Anukarnsakulchularp
 <h1>Getting started</h1>
 
 </section>
-<section id="first-step" class="slide level2" data-background-color="#006DAE">
-<h2>First step</h2>
+<section id="first-step" class="slide level2">
+<h2><span style="color:#006DAE;">First step</span></h2>
+<div class="callout callout-caution callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Practicing</strong></p>
+</div>
+<div class="callout-content">
 <ol type="1">
 <li><p>Create a project.</p></li>
 <li><p>Create a quarto document.</p></li>
 <li><p>Render document.</p></li>
 </ol>
 <p>Your turn!</p>
+</div>
+</div>
+</div>
 </section>
 <section id="elements-of-a-reproducible-project" class="slide level2">
 <h2>Elements of a reproducible project</h2>
@@ -345,7 +359,9 @@ Krisanat Anukarnsakulchularp
 <li>All files should be stored within the project location (typically a folder).</li>
 <li>All files should be explicitly tied together.</li>
 </ul>
+<div class="fragment">
 <p>But how do we tie the files together?</p>
+</div>
 </section>
 <section id="computer-paths" class="slide level2">
 <h2>Computer paths</h2>
@@ -392,11 +408,26 @@ Krisanat Anukarnsakulchularp
 <li><code>qmd</code> file: quarto document</li>
 <li>Other <code>R</code> scripts, etc…</li>
 </ul>
-<p>directory picture</p>
+
+<img data-src="images/project-example.jpg" class="r-stretch"><div class="f50">
+<p><a href="https://rcp.numbat.space/week2/#/rstudio-project-example">Source: ETC5513 - Collaborative and Reproducible Practices</a></p>
+</div>
 </section>
-<section id="your-turn" class="slide level2" data-background-color="#006DAE">
-<h2>Your turn!</h2>
+<section id="your-turn" class="slide level2">
+<h2><span style="color:#006DAE;">Your turn!</span></h2>
+<div class="callout callout-caution callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Practicing</strong></p>
+</div>
+<div class="callout-content">
 <p>Let’s fill up our work projects.</p>
+</div>
+</div>
+</div>
 </section></section>
 <section>
 <section id="quarto-details" class="title-slide slide level1 center">
@@ -409,14 +440,26 @@ Krisanat Anukarnsakulchularp
 <li><p>Provides a framework for integrating code and text into a single document.</p></li>
 <li><p>The code is written within the code chunks, put the text around that, and get a fully reproducible document.</p></li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/quarto.svg" class="quarto-figure quarto-figure-center" style="width:20.0%;height:20.0%"></p>
+</figure>
+</div>
+<div class="f50">
+<p><a href="https://github.com/rstudio/hex-stickers">Source: GitHub - RStudio hex stickers</a></p>
+</div>
 </section>
 <section id="quarto-document-elements" class="slide level2">
 <h2>Quarto document elements</h2>
 <ol type="1">
-<li><p>Metadata (YAML)</p></li>
-<li><p>Text (formatted with Markdown)</p></li>
-<li><p>Code (code formatting)</p></li>
+<li><p><strong>Text</strong> (formatted with Markdown)</p></li>
+<li><p><strong>Code</strong> (code formatting)</p></li>
+<li><p><strong>Metadata</strong> (YAML)</p></li>
 </ol>
+
+<img data-src="images/quarto-elements.png" class="quarto-figure quarto-figure-center r-stretch"><div class="f50">
+<p><a href="https://rstudio.github.io/cheatsheets/quarto.pdf">Source: Quarto Cheatsheets</a></p>
+</div>
 </section>
 <section id="dynamic-documents" class="slide level2">
 <h2>Dynamic documents</h2>
@@ -500,8 +543,8 @@ Krisanat Anukarnsakulchularp
 </div>
 </div></div>
 </section>
-<section id="your-turn-1" class="slide level2" data-background-color="#006DAE">
-<h2>Your turn!</h2>
+<section id="your-turn-1" class="slide level2">
+<h2><span style="color:#006DAE;">Your turn!</span></h2>
 <div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -649,8 +692,8 @@ Krisanat Anukarnsakulchularp
 </div>
 </div></div>
 </section>
-<section id="your-turn-2" class="slide level2" data-background-color="#006DAE">
-<h2>Your turn!</h2>
+<section id="your-turn-2" class="slide level2">
+<h2><span style="color:#006DAE;">Your turn!</span></h2>
 <div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -683,14 +726,14 @@ Krisanat Anukarnsakulchularp
 </section>
 <section id="html-result" class="slide level2">
 <h2>HTML result</h2>
-<p>Example picture</p>
-</section>
+
+<img data-src="images/html-example.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="pdf-result" class="slide level2">
 <h2>PDF result</h2>
-<p>Example picture</p>
-</section>
-<section id="your-turn-3" class="slide level2" data-background-color="#006DAE">
-<h2>Your turn!</h2>
+
+<img data-src="images/pdf-example.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="your-turn-3" class="slide level2">
+<h2><span style="color:#006DAE;">Your turn!</span></h2>
 <div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -718,18 +761,25 @@ Krisanat Anukarnsakulchularp
 <h2>What is a quarto template?</h2>
 <p>The templates provide a straightforward way to get started with new Quarto projects by providing example content and options.</p>
 <ol type="1">
-<li><p>Create a working initial document for custom formats</p></li>
-<li><p>Provide the initial content for a custom project type</p></li>
+<li class="fragment"><p>Create a working initial document for custom formats</p></li>
+<li class="fragment"><p>Provide the initial content for a custom project type</p></li>
 </ol>
+<div class="fragment">
 <p>Remember all the painstaking work we did earlier, setting YAML, creating all the folders, and setting the execution options.</p>
+</div>
+<div class="fragment">
 <p>All of that can be gone with one line in the terminal!!</p>
+</div>
 </section>
 <section id="using-a-template" class="slide level2">
 <h2>Using a template</h2>
 <p>The command below copies the contents from the GitHub repository to our local system.</p>
-<p><code>quarto use template KrisanatA/workshop-template</code></p>
-
+<p><code>quarto use template numbat-tutorials/workshop-template</code></p>
 </section></section>
+<section id="lets-take-a-10-minute-break" class="title-slide slide level1 center">
+<h1>Let’s take a 10-minute break</h1>
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

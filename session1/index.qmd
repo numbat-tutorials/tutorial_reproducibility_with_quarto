@@ -142,6 +142,8 @@ Janith Wanniarachchi
 
 ## Why?
 
+:::{.incremental}
+
 - **Efficiency**: allow changes to be implemented more easily, especially for dynamic reproducible documents.
 
 - **Repeatability**: the analysis can be repeated multiple times while still obtaining the same results.
@@ -150,9 +152,11 @@ Janith Wanniarachchi
 
 - **Easy to update**: when new data arrives, the report can be automatically updated.
 
-::: {.fragment}
+:::
 
-*And future you will thank you, because they will know what past you was thinking*. It helps memory, collaboration and sharing.
+:::{.fragment}
+
+*And future you will thank you, because they will know what past you was thinking*. It helps memory, collaboration, and sharing.
 
 :::
 
@@ -181,7 +185,7 @@ Reproducibility requires more than literate programming. These are:
 - a versioning and sharing system, like GitHub and git. 
 - software environment supporting workflows such as [targets](https://docs.ropensci.org/targets/) or [renv](https://rstudio.github.io/renv/articles/renv.html).
 
-*But these are for a future workshops.* 
+*But these are for future workshops.* 
 
 :::
 
@@ -192,7 +196,11 @@ Reproducibility requires more than literate programming. These are:
 
 - These two things produce a **report**, a **paper**, or **presentation** sequentially and dynamically, and possibly different output formats, html, pdf, docx, ppt, by changing one line in the file. 
 
+:::{.fragment}
+
 More on papers and presentations in the next sessions! *Here we focus on reports!*
+
+:::
 
 
 ## Main tools for reproducible research
@@ -204,12 +212,16 @@ More on papers and presentations in the next sessions! *Here we focus on reports
 - **Quarto**: tools for writing a complete analysis, and combines text and code together.
 
 ::: {.smaller}
-Similar tools are available in other language, and quarto can contain code chunks of various languages, possibly in the same document.
+Similar tools are available in other languages, and Quarto can contain code chunks of various languages, possibly in the same document.
 :::
 
 # Getting started 
 
-## First step {background-color="#006DAE"}
+## [First step]{style="color:#006DAE;"}
+
+:::{.callout-caution}
+
+## Practicing
 
 1. Create a project.
 
@@ -219,6 +231,8 @@ Similar tools are available in other language, and quarto can contain code chunk
 
 Your turn!
 
+:::
+
 
 ## Elements of a reproducible project
 
@@ -226,7 +240,12 @@ Your turn!
 - All files should be stored within the project location (typically a folder).
 - All files should be explicitly tied together.
 
+:::{.fragment}
+
 But how do we tie the files together?
+
+:::
+
 
 ## Computer paths
 
@@ -260,12 +279,22 @@ Absolute paths should be avoided since it is extremely unlikely another person w
 - `qmd` file: quarto document
 - Other `R` scripts, etc...
 
-directory picture 
+![](images/project-example.jpg)
+
+::: {.f50}
+[Source: ETC5513 - Collaborative and Reproducible Practices](https://rcp.numbat.space/week2/#/rstudio-project-example)
+:::
 
 
-## Your turn! {background-color="#006DAE"}
+## [Your turn!]{style="color:#006DAE;"}
+
+:::{.callout-caution}
+
+## Practicing 
 
 Let's fill up our work projects.
+
+:::
 
 
 # Quarto details
@@ -276,14 +305,26 @@ Let's fill up our work projects.
 
 - The code is written within the code chunks, put the text around that, and get a fully reproducible document.
 
+![](images/quarto.svg){fig-align="center" width="20%" height="20%"}
+
+::: {.f50}
+[Source: GitHub - RStudio hex stickers](https://github.com/rstudio/hex-stickers)
+:::
+
 
 ## Quarto document elements
 
-1. Metadata (YAML)
+1. **Text** (formatted with Markdown)
 
-2. Text (formatted with Markdown)
+2. **Code** (code formatting)
 
-3. Code (code formatting)
+3. **Metadata** (YAML)
+
+![](images/quarto-elements.png){fig-align="center"}
+
+::: {.f50}
+[Source: Quarto Cheatsheets](https://rstudio.github.io/cheatsheets/quarto.pdf)
+:::
 
 
 ## Dynamic documents
@@ -390,7 +431,7 @@ Results:
 :::
 ::::
 
-## Your turn! {background-color="#006DAE"}
+## [Your turn!]{style="color:#006DAE;"}
 
 ::: {.callout-caution}
 ## Practicing
@@ -562,7 +603,7 @@ ggplot(cars,
 ::::
 
 
-## Your turn! {background-color="#006DAE"}
+## [Your turn!]{style="color:#006DAE;"}
 
 :::{.callout-caution}
 ## Practicing
@@ -574,6 +615,9 @@ Using the diamonds data from the ggplot2 package, do the following:
 2. Add figures with a caption
 
 :::
+
+
+
 
 
 ## Quarto: YAML
@@ -594,15 +638,15 @@ format:
 
 ## HTML result
 
-Example picture
+![](images/html-example.png){fig-align="center"}
 
 
 ## PDF result
 
-Example picture
+![](images/pdf-example.png){fig-align="center"}
 
 
-## Your turn! {background-color="#006DAE"}
+## [Your turn!]{style="color:#006DAE;"}
 
 :::{.callout-caution}
 ## Practice
@@ -619,18 +663,32 @@ Example picture
 
 The templates provide a straightforward way to get started with new Quarto projects by providing example content and options.
 
+:::{.incremental}
+
 1. Create a working initial document for custom formats
 
 2. Provide the initial content for a custom project type
 
+:::
+
+:::{.fragment}
+
 Remember all the painstaking work we did earlier, setting YAML, creating all the folders, and setting the execution options.
 
+:::
+
+:::{.fragment}
+
 All of that can be gone with one line in the terminal!!
+
+:::
 
 
 ## Using a template
 
 The command below copies the contents from the GitHub repository to our local system.
 
-`quarto use template KrisanatA/workshop-template`
+`quarto use template numbat-tutorials/workshop-template`
 
+
+# Let's take a 10-minute break
