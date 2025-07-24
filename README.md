@@ -54,6 +54,7 @@ This session guides you on creating journal papers and theses with Quarto, manag
 | **Bibliography**                                                         | How to manage and format references and citations in Quarto with practical examples.           |
 | **More exercises on adding code chunks, equations, figures, and tables** | Exercises that demonstrate adding code, equations, plots, and tables in Quarto documents for reproducible research. |
 
+[Open slides](https://numbat-tutorials.github.io/tutorial_reproducibility_with_quarto/session2)
 
 ### Session 3 (Engaging reproducible presentations)
 
@@ -69,6 +70,7 @@ This session will be giving a high level introduction to building presentations,
 | **Theming** | Adding that personal touch to your presentations to take it from zero to fabulous. |
 | **Animations** | Introducing animations and how they can be used without too much of a hassle. |
 
+[Open slides](https://numbat-tutorials.github.io/tutorial_reproducibility_with_quarto/session3)
 
 ## Getting started
 
