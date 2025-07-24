@@ -262,8 +262,8 @@
 <h1>Images, Code and Positioning</h1>
 
 </section>
-<section id="adding-images-is-the-same-in-a-markdown" class="slide level2">
-<h2>Adding images is the same in a markdown</h2>
+<section id="adding-images" class="slide level2">
+<h2>Adding images</h2>
 <div class="columns">
 <div class="column">
 <div class="codewindow quarto">
@@ -275,7 +275,7 @@
 <span id="cb2-5"><a href="" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-6"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">## Showing images is the same as reports</span></span>
 <span id="cb2-7"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="" aria-hidden="true" tabindex="-1"></a><span class="al">![Eevee](../img/eevee.jpg)</span>{.r-stretch width=64px}</span>
+<span id="cb2-8"><a href="" aria-hidden="true" tabindex="-1"></a><span class="al">![Eevee](../img/eevee.jpg)</span>{.r-stretch width=64px fig-alt="The pokemon Eevee, a cat like animal with long pointy ears, wearing a flower"}</span>
 <span id="cb2-9"><a href="" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-10"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">## Absolute positioning images </span></span>
 <span id="cb2-11"><a href="" aria-hidden="true" tabindex="-1"></a></span>
@@ -287,7 +287,7 @@
 <span id="cb2-17"><a href="" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-18"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zoom in to images </span></span>
 <span id="cb2-19"><a href="" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="" aria-hidden="true" tabindex="-1"></a><span class="al">![](../img/eevee.jpg)</span></span>
+<span id="cb2-20"><a href="" aria-hidden="true" tabindex="-1"></a><span class="al">![](../img/eevee.jpg)</span>{fig-alt="The pokemon Eevee, a cat like animal with long pointy ears, wearing a flower"}</span>
 <span id="cb2-21"><a href="" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-22"><a href="" aria-hidden="true" tabindex="-1"></a>Use the <span class="in">`Alt`</span> key to zoom in to images or areas of the presentation</span>
 <span id="cb2-23"><a href="" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -347,13 +347,13 @@
 </section>
 <section id="take-a-breather" class="slide level2 breather">
 <h2>Take a breather</h2>
-<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Tip</strong></p>
+<p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
 <p>Try making a presentation</p>
@@ -366,7 +366,7 @@
 </div>
 </section></section>
 <section>
-<section id="theming" class="title-slide slide level1 center">
+<section id="theming" class="title-slide slide level1 smaller center">
 <h1>Theming</h1>
 
 </section>
@@ -376,8 +376,21 @@
 <div class="sourceCode" id="cb4"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
 <span id="cb4-2"><a href="" aria-hidden="true" tabindex="-1"></a>  revealjs: </span>
 <span id="cb4-3"><a href="" aria-hidden="true" tabindex="-1"></a>    theme: simple</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Try changing the theme of the current presentation you are working on to <code>simple</code> or any other built in theme that you fancy</p>
+</div>
+</div>
+</div>
 </section>
-<section id="custom-themes" class="slide level2">
+<section id="custom-themes" class="slide level2 smaller">
 <h2>Custom themes</h2>
 <p>You can customize the individual parts of the presentation with a custom theme.</p>
 <div class="columns">
@@ -406,13 +419,13 @@
 </section>
 <section id="take-a-breather-1" class="slide level2 breather">
 <h2>Take a breather</h2>
-<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Tip</strong></p>
+<p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
 <p>Try styling your previous presentation by</p>
@@ -424,14 +437,32 @@
 </div>
 </div>
 </div>
+</section>
+<section id="design-choices" class="slide level2 smaller">
+<h2>Design choices</h2>
+<ul>
+<li>Accessibility (support for visually impaired users and physically challenged users)
+<ul>
+<li>Alt texts</li>
+<li>Slide tones (to indicate slide position and passing)</li>
+<li>Multiplexer (to let audience follow along with the speaker)</li>
+</ul></li>
+<li>Visual choices
+<ul>
+<li>Colorblind friendly color choices (<a href="https://www.whocanuse.com/">whocanuse</a>, <a href="https://www.color-blindness.com/coblis-color-blindness-simulator/">color-blindness</a>)</li>
+<li>Color contrast for readability (<a href="https://coolors.co/contrast-checker/">coolors</a>, <a href="https://colourcontrast.cc/">colourcontrast</a>)</li>
+<li>Theme colors for your own branding (<a href="https://coolors.co/">coolors</a>)</li>
+<li>Readable fonts aligned with your branding (<a href="https://fonts.google.com/">Google</a>, <a href="https://fonts.bunny.net/">Bunny (GDPR Compliant)</a>)</li>
+</ul></li>
+</ul>
 </section></section>
 <section>
 <section id="additional-tidbits" class="title-slide slide level1 center">
 <h1>Additional tidbits</h1>
 
 </section>
-<section id="tools-for-during-the-presentations" class="slide level2 smaller">
-<h2>Tools for during the presentations</h2>
+<section id="tools-for-the-presentation-time" class="slide level2 smaller">
+<h2>Tools for the presentation time</h2>
 <div>
 <ul>
 <li class="fragment">Navigation menu (<code>M</code> key)</li>
@@ -440,9 +471,33 @@
 <li class="fragment">Speaker view (<code>S</code> key)</li>
 <li class="fragment">Jump to slide (<code>G</code> key)</li>
 <li class="fragment">Overview mode (<code>O</code> key)</li>
-<li class="fragment">Slide tone (requires slide-tone: true)</li>
+<li class="fragment">Slide tone (requires <code>slide-tone: true</code>)</li>
+<li class="fragment">Mutliplexer (requires <code>multiplex: true</code>)</li>
 </ul>
 </div>
+</section>
+<section id="animations" class="slide level2">
+<h2>Animations</h2>
+<p>The simplest type of animations are incremental lists.</p>
+<div class="columns">
+<div class="column">
+<div class="sourceCode" id="cb6"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="" aria-hidden="true" tabindex="-1"></a>::: {.incremental}</span>
+<span id="cb6-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Five </span>
+<span id="cb6-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Six </span>
+<span id="cb6-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Seven</span>
+<span id="cb6-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Eight</span>
+<span id="cb6-6"><a href="" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div>
+<ul>
+<li class="fragment">Five</li>
+<li class="fragment">Six</li>
+<li class="fragment">Seven</li>
+<li class="fragment">Eight</li>
+</ul>
+</div>
+</div></div>
+<p>There are more advanced ways to animate using fragments and auto-animate options as seen <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#fragments">here</a>.</p>
 </section>
 <section id="hosting-the-presentations" class="slide level2 smaller">
 <h2>Hosting the presentations</h2>
@@ -495,7 +550,7 @@
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-
+<p><a href="https://github.com/numbat-tutorials/tutorial_reproducibility_with_quarto.git">https://github.com/numbat-tutorials/tutorial_reproducibility_with_quarto</a></p>
 </div>
 </div></div>
 
@@ -530,7 +585,7 @@
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":false},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":true},
 'smaller': false,
  

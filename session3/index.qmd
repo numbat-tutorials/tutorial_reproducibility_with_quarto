@@ -7,9 +7,10 @@ format:
 revealjs-plugins:
   - codewindow
 echo: false
-menu: false
+menu: true
 code-line-numbers: false
 pagetitle: "Engaging reproducible presentations"
+footer: "[https://github.com/numbat-tutorials/tutorial_reproducibility_with_quarto](https://github.com/numbat-tutorials/tutorial_reproducibility_with_quarto.git)"
 ---
 
 ::: {.center .title-text}
@@ -60,7 +61,7 @@ Try changing the value for format to `pptx` or `beamer` and see how the value ch
 
 # Images, Code and Positioning
 
-## Adding images is the same in a markdown
+## Adding images
 
 :::: {.columns}
 
@@ -103,7 +104,7 @@ code-output.qmd
 
 ## Take a breather {.breather}
 
-::: {.callout-tip}
+::: {.callout-note}
 Try making a presentation 
 
 - including a photo you take with your camera right now (or use an existing image in your computer)
@@ -112,7 +113,7 @@ Try making a presentation
 :::
 
 
-# Theming
+# Theming {.smaller}
 
 ## Built in themes 
 
@@ -124,7 +125,11 @@ format:
     theme: simple
 ``````
 
-## Custom themes 
+:::{.callout-tip}
+Try changing the theme of the current presentation you are working on to `simple` or any other built in theme that you fancy
+:::
+
+## Custom themes {.smaller}
 
 You can customize the individual parts of the presentation with a custom theme.
 
@@ -147,7 +152,7 @@ You can customize the individual parts of the presentation with a custom theme.
 
 ## Take a breather {.breather}
 
-::: {.callout-tip}
+::: {.callout-note}
 Try styling your previous presentation by 
 
 - Change the base font color and family
@@ -156,10 +161,21 @@ Try styling your previous presentation by
 
 :::
 
+## Design choices {.smaller}
+
+- Accessibility (support for visually impaired users and physically challenged users)
+  - Alt texts
+  - Slide tones (to indicate slide position and passing)
+  - Multiplexer (to let audience follow along with the speaker)
+- Visual choices
+  - Colorblind friendly color choices ([whocanuse](https://www.whocanuse.com/), [color-blindness](https://www.color-blindness.com/coblis-color-blindness-simulator/))
+  - Color contrast for readability ([coolors](https://coolors.co/contrast-checker/), [colourcontrast](https://colourcontrast.cc/))
+  - Theme colors for your own branding ([coolors](https://coolors.co/))
+  - Readable fonts aligned with your branding ([Google](https://fonts.google.com/), [Bunny (GDPR Compliant)](https://fonts.bunny.net/))
 
 # Additional tidbits
 
-## Tools for during the presentations {.smaller}
+## Tools for the presentation time {.smaller}
 
 ::: {.incremental}
 * Navigation menu (`M` key)
@@ -168,8 +184,41 @@ Try styling your previous presentation by
 * Speaker view (`S` key) 
 * Jump to slide (`G` key) 
 * Overview mode (`O` key)
-* Slide tone (requires slide-tone: true)
+* Slide tone (requires `slide-tone: true`)
+* Mutliplexer (requires `multiplex: true`)
 :::
+
+## Animations
+
+The simplest type of animations are incremental lists.
+
+::::{.columns}
+:::{.column}
+
+``````md
+::: {.incremental}
+- Five 
+- Six 
+- Seven
+- Eight
+:::
+``````
+:::
+
+:::{.column}
+
+::: {.incremental}
+- Five 
+- Six 
+- Seven
+- Eight
+:::
+
+:::
+
+:::: 
+
+There are more advanced ways to animate using fragments and auto-animate options as seen [here](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments).
 
 ## Hosting the presentations {.smaller}
 

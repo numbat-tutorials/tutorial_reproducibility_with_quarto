@@ -5,7 +5,7 @@ format: revealjs
 
 ## Showing images is the same as reports
 
-![Eevee](../img/eevee.jpg){.r-stretch width=64px}
+![Eevee](../img/eevee.jpg){.r-stretch width=64px fig-alt="The pokemon Eevee, a cat like animal with long pointy ears, wearing a flower"}
 
 ## Absolute positioning images 
 
@@ -17,7 +17,7 @@ format: revealjs
 
 ## Zoom in to images 
 
-![](../img/eevee.jpg)
+![](../img/eevee.jpg){fig-alt="The pokemon Eevee, a cat like animal with long pointy ears, wearing a flower"}
 
 Use the `Alt` key to zoom in to images or areas of the presentation
 
