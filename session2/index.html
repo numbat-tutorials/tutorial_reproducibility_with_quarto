@@ -332,43 +332,33 @@ Jayani P. G. Lakshika
 <h1>⚙️ Quarto Quirks &amp; Power Tips</h1>
 
 </section>
-<section id="conditional-code-execution-by-output-format" class="slide level2">
-<h2>🧩 Conditional Code Execution by Output Format</h2>
-<p>Sometimes you may want to run a code chunk <strong>only when rendering to HTML</strong> or <strong>only for PDF</strong> output.</p>
-<h3 id="run-only-for-html">Run only for HTML:</h3>
-<p>Use this option:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a><span class="co">#| eval: knitr::is_html_output()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<h3 id="run-only-for-pdf">Run only for PDF:</h3>
-<p>Use this option:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a><span class="co">#| eval: knitr::is_latex_output()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
 <section class="slide level2">
 
 <h3 id="latex-equation-in-a-figure-caption">📐 LaTeX Equation in a Figure Caption</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href=""></a><span class="al">![This figure demonstrates the equation $E = mc^2$.](figure.png)</span>{#fig-einstein}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href=""></a><span class="al">![This figure demonstrates the equation $E = mc^2$.](figure.png)</span>{#fig-einstein}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>✅ You can embed LaTeX-style equations directly using dollar signs (<code>$...$</code>) in the caption.</p>
 <p>✅ Works in both <strong>HTML</strong> and <strong>PDF</strong> outputs.</p>
 </section>
 <section class="slide level2">
 
 <h3 id="refer-to-another-figure-in-a-caption">Refer to Another Figure in a Caption</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href=""></a><span class="al">![Here we compare this with Figure @fig-einstein.](comparison.png)</span>{#fig-compare}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href=""></a><span class="al">![Here we compare this with Figure @fig-einstein.](comparison.png)</span>{#fig-compare}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>📝 <code>@fig-einstein</code> will resolve to the numbered figure reference (e.g., <em>Figure 1</em>) in PDF/HTML.</p>
 <p>📌 Make sure the first figure has an ID like <code>{#fig-einstein}</code>.</p>
 </section>
 <section class="slide level2">
 
 <h3 id="hyperlink-in-a-table">🔗 Hyperlink in a Table</h3>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href=""></a><span class="pp">|</span> Tool   <span class="pp">|</span> Link                              <span class="pp">|</span></span>
-<span id="cb12-2"><a href=""></a><span class="pp">|--------|-----------------------------------|</span></span>
-<span id="cb12-3"><a href=""></a><span class="pp">|</span> Quarto <span class="pp">|</span> <span class="co">[</span><span class="ot">quarto.org</span><span class="co">](https://quarto.org)</span> <span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href=""></a><span class="pp">|</span> Tool   <span class="pp">|</span> Link                              <span class="pp">|</span></span>
+<span id="cb10-2"><a href=""></a><span class="pp">|--------|-----------------------------------|</span></span>
+<span id="cb10-3"><a href=""></a><span class="pp">|</span> Quarto <span class="pp">|</span> <span class="co">[</span><span class="ot">quarto.org</span><span class="co">](https://quarto.org)</span> <span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>✅ Use standard Markdown syntax inside tables: <code>[text](url)</code></p>
 <p>✅ Works for <strong>external links</strong>, local files, and section anchors.</p>
 </section>
 <section class="slide level2">
 
 <h3 id="alt-text-in-figure-chunk">🖼 Alt-Text in Figure Chunk</h3>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href=""></a><span class="al">![Scatterplot of speed vs. distance](cars-plot.png)</span>{fig-alt="A scatterplot showing car stopping distances by speed."}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href=""></a><span class="al">![Scatterplot of speed vs. distance](cars-plot.png)</span>{fig-alt="A scatterplot showing car stopping distances by speed."}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>✅ Use <code>fig-alt="..."</code> to improve <strong>accessibility</strong> and support screen readers.</p>
 <p>👍 Highly recommended for academic publishing and accessibility standards.</p>
 </section>
@@ -379,7 +369,6 @@ Jayani P. G. Lakshika
 <li>🎓 <strong>Monash Thesis</strong> – The Monash thesis template gives you a structured, submission-ready format out of the box.</li>
 <li>📚 <strong>Citations</strong> – Bibliographies are managed with <code>.bib</code> files and citations inserted using <code>[@key]</code> syntax.</li>
 <li>📊 <strong>Code &amp; Output</strong> – Quarto lets you embed R code, equations, figures, and tables with full formatting control.</li>
-<li>🧩 <strong>Conditional Rendering</strong> – You can control which code chunks run for HTML vs.&nbsp;PDF using <code>knitr::is_html_output()</code> or <code>knitr::is_latex_output()</code>.</li>
 </ul>
 </section></section>
 <section id="keep-writing-and-keep-it-reproducible" class="title-slide slide level1 center">

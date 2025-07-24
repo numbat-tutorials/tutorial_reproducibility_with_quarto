@@ -222,25 +222,6 @@ As shown in recent work [@smith2021], the method is effective.
 
 # ⚙️ Quarto Quirks & Power Tips
 
-## 🧩 Conditional Code Execution by Output Format
-
-Sometimes you may want to run a code chunk **only when rendering to HTML** or **only for PDF** output.
-
-### Run only for HTML:
-
-Use this option:
-
-```r
-#| eval: knitr::is_html_output()
-```
-
-### Run only for PDF:
-
-Use this option:
-
-```r
-#| eval: knitr::is_latex_output()
-```
 ---
 
 ### 📐 LaTeX Equation in a Figure Caption
@@ -298,7 +279,6 @@ Use this option:
 * 🎓 **Monash Thesis** – The Monash thesis template gives you a structured, submission-ready format out of the box.
 * 📚 **Citations** – Bibliographies are managed with `.bib` files and citations inserted using `[@key]` syntax.
 * 📊 **Code & Output** – Quarto lets you embed R code, equations, figures, and tables with full formatting control.
-* 🧩 **Conditional Rendering** – You can control which code chunks run for HTML vs. PDF using `knitr::is_html_output()` or `knitr::is_latex_output()`.
 
 # Keep writing and keep it reproducible 💡
 
