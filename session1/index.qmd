@@ -166,26 +166,33 @@ Janith Wanniarachchi
 
 ## How to combine text and data analysis?
 
+<br>
+
 ::: {.callout-note}
 ## Literate programming
 
 Literate programming is an approach to writing reports using software that weaves together the source code and text at the time of creation.
 :::
 
-:::{.smaller}
+::: {.smaller}
 
-However, a complex project will require more than literate programming.
+Reproducibility requires more than literate programming. These are:
+
+- a versioning and sharing system, like GitHub and git. 
+- software environment supporting workflows such as [targets](https://docs.ropensci.org/targets/) or [renv](https://rstudio.github.io/renv/articles/renv.html).
+
+*But these are for a future workshops.* 
 
 :::
 
 
-## Dynamics documents
+## Dynamics documents 
 
-- A dynamic document includes code used for data analysis and report text.
+- A dynamic document includes **code** used for data analysis and **text** explaining the analysis and results.
 
-- These two things produce a report, paper, and presentation sequentially and dynamically.
+- These two things produce a **report**, a **paper**, or **presentation** sequentially and dynamically, and possibly different output formats, html, pdf, docx, ppt, by changing one line in the file. 
 
-More on this later!
+More on papers and presentations in the next sessions! *Here we focus on reports!*
 
 
 ## Main tools for reproducible research
@@ -196,10 +203,13 @@ More on this later!
 
 - **Quarto**: tools for writing a complete analysis, and combines text and code together.
 
+::: {.smaller}
+Similar tools are available in other language, and quarto can contain code chunks of various languages, possibly in the same document.
+:::
 
-# Getting started
+# Getting started 
 
-## First step
+## First step {background-color="#006DAE"}
 
 1. Create a project.
 
@@ -224,18 +234,18 @@ A path is the complete location or name of where a computer file, directory, or 
 
 Examples:
 
-- Windows: C:\\Documents\\workshop
-- Mac/Linux: /Users/Documents/workshop
-- Internet: https://numbat.space/
+- `Windows: C:\\Documents\\workshop`
+- `Mac/Linux: /Users/Documents/workshop`
+- `Internet: https://numbat.space/`
 
 
 ## Absolute and Relative paths
 
-- Absolute: start from the lowest level, typically a drive letter or root (/)
-  - /Users/Documents/workshop 
+- **Absolute**: start from the lowest level, typically a drive letter or root (/)
+  - `/Users/Documents/workshop` ⚠️
 
-- Relative: refers to a location that is relative to the current directory. 
-  - ./workshop
+- **Relative**: refers to a location that is relative to the current directory. 
+  - `./workshop`
 
 ::: {.callout-important}
 Absolute paths should be avoided since it is extremely unlikely another person will have the same absolute path as you.
@@ -244,16 +254,16 @@ Absolute paths should be avoided since it is extremely unlikely another person w
 
 ## Work projects
 
-- Data folder: contains all the data for the project.
-- Images/Figures folder: contains all the external pictures not produced by the code in the qmd file.
-- .Rproj file: automatically added when creating an RStudio project (handles the relative paths and working directories).
-- qmd file: quarto document
-- Other R scripts, etc...
+- **Data folder**: contains all the data for the project.
+- **Images/Figures folder**: contains all the external pictures not produced by the code in the qmd file.
+- `.Rproj` file: automatically added when creating an RStudio project (handles the relative paths and working directories).
+- `qmd` file: quarto document
+- Other `R` scripts, etc...
 
 directory picture 
 
 
-## Your turn!
+## Your turn! {background-color="#006DAE"}
 
 Let's fill up our work projects.
 
@@ -380,7 +390,7 @@ Results:
 :::
 ::::
 
-## Your turn!
+## Your turn! {background-color="#006DAE"}
 
 ::: {.callout-caution}
 ## Practicing
@@ -552,7 +562,7 @@ ggplot(cars,
 ::::
 
 
-## Your turn!
+## Your turn! {background-color="#006DAE"}
 
 :::{.callout-caution}
 ## Practicing
@@ -592,7 +602,7 @@ Example picture
 Example picture
 
 
-## Your turn!
+## Your turn! {background-color="#006DAE"}
 
 :::{.callout-caution}
 ## Practice

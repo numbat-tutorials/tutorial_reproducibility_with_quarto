@@ -282,6 +282,7 @@ Krisanat Anukarnsakulchularp
 </section>
 <section id="how-to-combine-text-and-data-analysis" class="slide level2">
 <h2>How to combine text and data analysis?</h2>
+<p><br></p>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -296,16 +297,21 @@ Krisanat Anukarnsakulchularp
 </div>
 </div>
 <div class="smaller">
-<p>However, a complex project will require more than literate programming.</p>
+<p>Reproducibility requires more than literate programming. These are:</p>
+<ul>
+<li>a versioning and sharing system, like GitHub and git.</li>
+<li>software environment supporting workflows such as <a href="https://docs.ropensci.org/targets/">targets</a> or <a href="https://rstudio.github.io/renv/articles/renv.html">renv</a>.</li>
+</ul>
+<p><em>But these are for a future workshops.</em></p>
 </div>
 </section>
 <section id="dynamics-documents" class="slide level2">
 <h2>Dynamics documents</h2>
 <ul>
-<li><p>A dynamic document includes code used for data analysis and report text.</p></li>
-<li><p>These two things produce a report, paper, and presentation sequentially and dynamically.</p></li>
+<li><p>A dynamic document includes <strong>code</strong> used for data analysis and <strong>text</strong> explaining the analysis and results.</p></li>
+<li><p>These two things produce a <strong>report</strong>, a <strong>paper</strong>, or <strong>presentation</strong> sequentially and dynamically, and possibly different output formats, html, pdf, docx, ppt, by changing one line in the file.</p></li>
 </ul>
-<p>More on this later!</p>
+<p>More on papers and presentations in the next sessions! <em>Here we focus on reports!</em></p>
 </section>
 <section id="main-tools-for-reproducible-research" class="slide level2">
 <h2>Main tools for reproducible research</h2>
@@ -314,13 +320,16 @@ Krisanat Anukarnsakulchularp
 <li><p><strong>RStudio</strong>: an integrated developer environment (IDE).</p></li>
 <li><p><strong>Quarto</strong>: tools for writing a complete analysis, and combines text and code together.</p></li>
 </ul>
+<div class="smaller">
+<p>Similar tools are available in other language, and quarto can contain code chunks of various languages, possibly in the same document.</p>
+</div>
 </section></section>
 <section>
 <section id="getting-started" class="title-slide slide level1 center">
 <h1>Getting started</h1>
 
 </section>
-<section id="first-step" class="slide level2">
+<section id="first-step" class="slide level2" data-background-color="#006DAE">
 <h2>First step</h2>
 <ol type="1">
 <li><p>Create a project.</p></li>
@@ -343,21 +352,21 @@ Krisanat Anukarnsakulchularp
 <p>A path is the complete location or name of where a computer file, directory, or web page is located.</p>
 <p>Examples:</p>
 <ul>
-<li>Windows: C:\Documents\workshop</li>
-<li>Mac/Linux: /Users/Documents/workshop</li>
-<li>Internet: https://numbat.space/</li>
+<li><code>Windows: C:\\Documents\\workshop</code></li>
+<li><code>Mac/Linux: /Users/Documents/workshop</code></li>
+<li><code>Internet: https://numbat.space/</code></li>
 </ul>
 </section>
 <section id="absolute-and-relative-paths" class="slide level2">
 <h2>Absolute and Relative paths</h2>
 <ul>
-<li>Absolute: start from the lowest level, typically a drive letter or root (/)
+<li><strong>Absolute</strong>: start from the lowest level, typically a drive letter or root (/)
 <ul>
-<li>/Users/Documents/workshop</li>
+<li><code>/Users/Documents/workshop</code> ⚠️</li>
 </ul></li>
-<li>Relative: refers to a location that is relative to the current directory.
+<li><strong>Relative</strong>: refers to a location that is relative to the current directory.
 <ul>
-<li>./workshop</li>
+<li><code>./workshop</code></li>
 </ul></li>
 </ul>
 <div class="callout callout-important callout-titled callout-style-default">
@@ -377,15 +386,15 @@ Krisanat Anukarnsakulchularp
 <section id="work-projects" class="slide level2">
 <h2>Work projects</h2>
 <ul>
-<li>Data folder: contains all the data for the project.</li>
-<li>Images/Figures folder: contains all the external pictures not produced by the code in the qmd file.</li>
-<li>.Rproj file: automatically added when creating an RStudio project (handles the relative paths and working directories).</li>
-<li>qmd file: quarto document</li>
-<li>Other R scripts, etc…</li>
+<li><strong>Data folder</strong>: contains all the data for the project.</li>
+<li><strong>Images/Figures folder</strong>: contains all the external pictures not produced by the code in the qmd file.</li>
+<li><code>.Rproj</code> file: automatically added when creating an RStudio project (handles the relative paths and working directories).</li>
+<li><code>qmd</code> file: quarto document</li>
+<li>Other <code>R</code> scripts, etc…</li>
 </ul>
 <p>directory picture</p>
 </section>
-<section id="your-turn" class="slide level2">
+<section id="your-turn" class="slide level2" data-background-color="#006DAE">
 <h2>Your turn!</h2>
 <p>Let’s fill up our work projects.</p>
 </section></section>
@@ -491,7 +500,7 @@ Krisanat Anukarnsakulchularp
 </div>
 </div></div>
 </section>
-<section id="your-turn-1" class="slide level2">
+<section id="your-turn-1" class="slide level2" data-background-color="#006DAE">
 <h2>Your turn!</h2>
 <div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
@@ -640,7 +649,7 @@ Krisanat Anukarnsakulchularp
 </div>
 </div></div>
 </section>
-<section id="your-turn-2" class="slide level2">
+<section id="your-turn-2" class="slide level2" data-background-color="#006DAE">
 <h2>Your turn!</h2>
 <div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
@@ -680,7 +689,7 @@ Krisanat Anukarnsakulchularp
 <h2>PDF result</h2>
 <p>Example picture</p>
 </section>
-<section id="your-turn-3" class="slide level2">
+<section id="your-turn-3" class="slide level2" data-background-color="#006DAE">
 <h2>Your turn!</h2>
 <div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
