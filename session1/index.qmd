@@ -17,7 +17,7 @@ title-slide-attributes:
   data-background-position: "justify"
 template-partials:
   - style/title-slide.html 
-footer: "[Reproducibility with Quarto]"
+footer: "[Reproducibility with Quarto](https://numbat-tutorials.github.io/tutorial_reproducibility_with_quarto/)"
 ---
 
 ```{r}
@@ -124,14 +124,21 @@ Janith Wanniarachchi
 
 ::::
 
-## What is reproducible research?
+## 💻 📃 What is reproducible research?
 
-**According to the USA National Academies of Science, Engineering and Medicie:**
+<br><br>
 
-- Reproducibility means obtaining consistent results using the same input data, computational steps, methods, code and conditions of analysis.
+**The National Academies of Science, Engineering and Medicine in the USA says:**
+
+> *Reproducibility means obtaining consistent results using the same input data, computational steps, methods, code and conditions of analysis*.
+
+<br><br><br><br>
+
+::: {.f50}
 
 [Reference: Report on reproducibility and replicability](https://www.nap.edu/read/25303/chapter/1#xix)
 
+:::
 
 ## Why?
 
@@ -141,11 +148,21 @@ Janith Wanniarachchi
 
 - **Transparency**: everything is available for access, resulting in more trustworthy results.
 
+- **Easy to update**: when new data arrives, the report can be automatically updated.
+
+::: {.fragment}
+
+*And future you will thank you, because they will know what past you was thinking*. It helps memory, collaboration and sharing.
+
+:::
 
 ## How might the project look?
 
-![](images/environmental-data-science-r4ds-general.png){width="75%" fig-align="center"}
+![](images/environmental-data-science-r4ds-general.png){width="70%" fig-align="center"}
 
+::: {.f50}
+[Source: Julia Lowndes, useR! 2019 keynote](https://openscapes.org/blog/2019-08-22-user-keynote/)
+:::
 
 ## How to combine text and data analysis?
 
