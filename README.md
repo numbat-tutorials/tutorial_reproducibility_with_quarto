@@ -41,6 +41,8 @@ This session will guide you through creating a reproducible project, starting wi
 | **Quarto details**      | Learn about the Quarto document, the structure and its components, different types of outputs. Incorporating data, code chunks, plots and tables.  |
 | **Quarto templates**    | A brief introduction to templates and how to use them, and making modifications. |
 
+[Open slides](https://numbat-tutorials.github.io/tutorial_reproducibility_with_quarto/session1)
+
 ### Session 2 (Writing academically)
 
 This session guides you on creating journal papers and theses with Quarto, managing bibliographies, and adding code, equations, figures, and tables for reproducible, well-formatted documents.
