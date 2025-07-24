@@ -132,7 +132,7 @@ Then, update your YAML header to use the new format.
 <!-- https://github.com/quarto-journals -->
 
 
-## 🧪 Let's Try It Together!
+## 🧪 [Let's Try It Together!]{style="color:#006DAE;"}
 
 Now it's your turn to try creating a Quarto journal article using the **JSS template**.
 
@@ -282,5 +282,6 @@ As shown in recent work [@smith2021], the method is effective.
 
 # Keep writing and keep it reproducible 💡
 
-
+- Journal templates are [available here](https://github.com/quarto-journals/).
+- Templates for monash thesis and other documents are [available here](https://github.com/quarto-monash). 
 
