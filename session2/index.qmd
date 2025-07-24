@@ -88,7 +88,6 @@ This template includes:
 * A pre-configured YAML header
 * Sample `.qmd` content
 * A bibliography file (`references.bib`)
-* A citation style file (`jss.csl`)
 
 You’ll be able to write, cite, and format your article — ready for submission — all in Quarto!
 
@@ -109,7 +108,6 @@ This will:
 
   * A sample `.qmd` file
   * A sample bibliography (`references.bib`)
-  * A citation style file (`jss.csl`)
 
 You'll be ready to write your article right away!
 
@@ -151,7 +149,6 @@ quarto use template quarto-journals/jss
 
    * `index.qmd` (main article)
    * `references.bib` (sample bibliography)
-   * `jss.csl` (citation style)
 
 4. Click **Render** to preview the document as PDF or HTML
 
