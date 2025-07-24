@@ -12,7 +12,7 @@ format:
     height: 750
     slide-number: c/t
 title-slide-attributes: 
-  data-background-image: "_extensions/numbats/monash/images/bg-10.png"
+  data-background-image: "images/bg-10.png"
   data-background-size: contain
   data-background-position: "justify"
 template-partials:
