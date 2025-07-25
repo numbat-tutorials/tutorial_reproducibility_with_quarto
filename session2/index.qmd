@@ -13,7 +13,7 @@ format:
     slide-number: c/t
 title-slide-attributes: 
   data-background-image: "https://numbat-tutorials.github.io/tutorial_reproducibility_with_quarto/session2/images/bg-10.png"
-  data-background-size: contain
+  data-background-size: cover
   data-background-position: "justify"
 template-partials:
   - style/title-slide.html 
