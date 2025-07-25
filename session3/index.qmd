@@ -166,7 +166,6 @@ Try styling your previous presentation by
 - Accessibility (support for visually impaired users and physically challenged users)
   - Alt texts
   - Slide tones (to indicate slide position and passing)
-  - Multiplexer (to let audience follow along with the speaker)
 - Visual choices
   - Colorblind friendly color choices ([whocanuse](https://www.whocanuse.com/), [color-blindness](https://www.color-blindness.com/coblis-color-blindness-simulator/))
   - Color contrast for readability ([coolors](https://coolors.co/contrast-checker/), [colourcontrast](https://colourcontrast.cc/))
@@ -180,12 +179,10 @@ Try styling your previous presentation by
 ::: {.incremental}
 * Navigation menu (`M` key)
 * Chalkboard (`C` key or `N` key, requires chalkboard: true) 
-* Multiplex (requires multiplex: true) 
 * Speaker view (`S` key) 
 * Jump to slide (`G` key) 
 * Overview mode (`O` key)
 * Slide tone (requires `slide-tone: true`)
-* Mutliplexer (requires `multiplex: true`)
 :::
 
 ## Animations
