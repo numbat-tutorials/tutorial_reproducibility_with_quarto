@@ -43,6 +43,8 @@ This session will guide you through creating a reproducible project, starting wi
 
 [Open slides](https://numbat-tutorials.github.io/tutorial_reproducibility_with_quarto/session1)
 
+[Workshop QMD](session1/workshop.qmd)
+
 ### Session 2 (Writing academically)
 
 This session guides you on creating journal papers and theses with Quarto, managing bibliographies, and adding code, equations, figures, and tables for reproducible, well-formatted documents.
